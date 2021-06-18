@@ -13,9 +13,9 @@ export default {
          name:'hello World',
      }
   },
-  async asyncData(){
-      let {data}=await axios.get('https://api.myjson.com/bins/8gdmr')
-      return {info: data}
-  }
+  // async asyncData(){
+  //     let {data}=await axios.get('https://api.myjson.com/bins/8gdmr')
+  //     return {info: data}
+  // }
 }
 </script>
