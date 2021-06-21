@@ -26,7 +26,8 @@ module.exports = {
   */
   plugins: [  //三方插件，可以直接在页面中使用
    { src:'~/plugins/axios',ssr:false},
-   {src:'~plugins/elementUI',ssr:false}
+   { src:'~plugins/elementUI',ssr:false},
+   { src:'~plugins/visibility',ssr:false},
   ],
   modules: [
     '@nuxtjs/axios',
