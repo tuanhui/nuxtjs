@@ -1,8 +1,11 @@
 <template>
+<!-- 使得预渲染数据匹配标签 -->
+  <client-only>   
   <div>
     <p>技术胖</p>
     <nuxt/>
   </div>
+  </client-only>
 </template>
 
 <style>
