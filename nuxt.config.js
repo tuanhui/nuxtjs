@@ -11,6 +11,9 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script:[
+      { type:'text/javascript', src:'/js/qrcode.min.js'}   //静态引入生成二维码的文件
     ]
   },
   /*

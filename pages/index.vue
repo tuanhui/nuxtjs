@@ -8,6 +8,7 @@
       <h2 class="subtitle">
         Nuxt.js project
       </h2>
+      
     </div>
     <ul>
       <li><nuxt-link :to="{name:'index'}">HOME</nuxt-link></li>
@@ -23,11 +24,33 @@ import AppLogo from '~/components/AppLogo.vue'
 export default {
   components: {
     AppLogo
+  },
+  mounted(){
+    console.log(window,"window");
+    let that = this;
+     window.onresize = () => {
+      return (() => {
+        window.screenWidth = document.body.clientWidth;
+        that.screenWidth = window.screenWidth;
+      })();
+    };
+    
+  },
+  methods:{
+    
   }
 }
 </script>
 
 <style>
+.code-box {
+  position: absolute;
+  right: 50px;
+  top: 163px;
+  width: 240px;
+  height: 240px;
+  background-color: #fff;
+}
 .container {
   min-height: 100vh;
   display: flex;

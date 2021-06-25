@@ -30,5 +30,17 @@ export default {
     //     }
     //   })
     // },
+    mounted(){
+        this.getlist();
+    },
+    methods:{
+        getlist(){
+            this.$http.get('server/list').then(res=>{
+                console.log(res,"res")
+
+            }
+            )
+        }
+    }
 }
 </script>
